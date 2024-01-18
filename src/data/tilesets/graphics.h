@@ -1634,3 +1634,22 @@ const u16 gTilesetPalettes_UnionRoom[][16] =
 };
 
 const u32 gTilesetTiles_UnionRoom[] = INCBIN_U32("data/tilesets/secondary/union_room/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Celestic[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/celestic/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Celestic[] = INCBIN_U32("data/tilesets/secondary/celestic/tiles.4bpp.lz");
