@@ -4430,6 +4430,26 @@
       "secondary_tileset": "gTileset_Celestic",
       "border_filepath": "data/layouts/Route211/border.bin",
       "blockdata_filepath": "data/layouts/Route211/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_CORONET_5F",
+      "name": "MtCoronet_5F_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MtCoronet_5F/border.bin",
+      "blockdata_filepath": "data/layouts/MtCoronet_5F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_CORONET_5F_STARTER_CAVE",
+      "name": "MtCoronet_5F_StarterCave_Layout",
+      "width": 26,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MtCoronet_5F_StarterCave/border.bin",
+      "blockdata_filepath": "data/layouts/MtCoronet_5F_StarterCave/map.bin"
     }
   ]
 }

@@ -1063,3 +1063,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CelesticTown/scripts.inc"
 
 	.include "data/maps/Route211/scripts.inc"
+
+	.include "data/maps/MtCoronet_5F/scripts.inc"
+
+	.include "data/maps/MtCoronet_5F_StarterCave/scripts.inc"

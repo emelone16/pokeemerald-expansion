@@ -432,7 +432,9 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "MeteorFalls_StevensCave",
+    "MtCoronet_5F",
+    "MtCoronet_5F_StarterCave"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
