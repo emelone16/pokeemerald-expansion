@@ -126,7 +126,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(CELESTIC_TOWN_RUINS), MAP_NUM(CELESTIC_TOWN_RUINS), 1, -1, -1);
+    SetWarpDestination(MAP_GROUP(CELESTIC_TOWN_RUINS), MAP_NUM(CELESTIC_TOWN_RUINS), -1, 9, 2);
     WarpIntoMap();
 }
 

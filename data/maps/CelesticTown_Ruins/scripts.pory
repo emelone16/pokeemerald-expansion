@@ -1,0 +1,9 @@
+mapscripts CelesticTown_Ruins_MapScripts {
+    
+}
+
+script CelesticTown_Ruins_TriggerScript_Intro {
+  lockall
+  msgbox("Cynthia gazes at ruins")
+  releaseall
+}
