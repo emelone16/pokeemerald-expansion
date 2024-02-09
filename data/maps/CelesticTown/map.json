@@ -27,8 +27,8 @@
       "x": 14,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN",
-      "dest_warp_id": "3"
+      "dest_map": "MAP_CELESTIC_TOWN_RUINS",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

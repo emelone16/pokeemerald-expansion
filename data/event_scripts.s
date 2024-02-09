@@ -1067,3 +1067,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtCoronet_5F/scripts.inc"
 
 	.include "data/maps/MtCoronet_5F_StarterCave/scripts.inc"
+
+	.include "data/maps/CelesticTown_Ruins/scripts.inc"
