@@ -1,0 +1,9 @@
+mapscripts CelesticTown_MapScripts {
+    
+}
+
+script CelesticTown_EventScript_TownSign {
+  lockall
+  msgbox("Celestic Town")
+  releaseall
+}
