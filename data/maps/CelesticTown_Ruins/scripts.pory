@@ -4,6 +4,7 @@ mapscripts CelesticTown_Ruins_MapScripts {
 
 script CelesticTown_Ruins_TriggerScript_Intro {
   lockall
+  addobject(1)
   msgbox(CynthiaObservesRuins)
   closemessage
   applymovement(1, RosieMovementIn)
@@ -14,7 +15,6 @@ script CelesticTown_Ruins_TriggerScript_Intro {
   applymovement(1, RosieMovementOut)
   waitmovement(0)
   removeobject(1)
-  setflag(FLAG_CELESTIC_RUINS_INTRO)
   setvar(VAR_CELESTIC_RUINS_STATE, 1)
   releaseall
 }

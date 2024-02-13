@@ -6,27 +6,27 @@ CelesticTown_Ruins_TriggerScript_Intro::
 # 6 "data/maps/CelesticTown_Ruins/scripts.pory"
 	lockall
 # 7 "data/maps/CelesticTown_Ruins/scripts.pory"
-	msgbox CynthiaObservesRuins
+	addobject 1
 # 8 "data/maps/CelesticTown_Ruins/scripts.pory"
-	closemessage
+	msgbox CynthiaObservesRuins
 # 9 "data/maps/CelesticTown_Ruins/scripts.pory"
-	applymovement 1, RosieMovementIn
-# 10 "data/maps/CelesticTown_Ruins/scripts.pory"
-	waitmovement 0
-# 11 "data/maps/CelesticTown_Ruins/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-# 12 "data/maps/CelesticTown_Ruins/scripts.pory"
-	msgbox CynthiaRosieConversation
-# 13 "data/maps/CelesticTown_Ruins/scripts.pory"
 	closemessage
-# 14 "data/maps/CelesticTown_Ruins/scripts.pory"
-	applymovement 1, RosieMovementOut
-# 15 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 10 "data/maps/CelesticTown_Ruins/scripts.pory"
+	applymovement 1, RosieMovementIn
+# 11 "data/maps/CelesticTown_Ruins/scripts.pory"
 	waitmovement 0
+# 12 "data/maps/CelesticTown_Ruins/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+# 13 "data/maps/CelesticTown_Ruins/scripts.pory"
+	msgbox CynthiaRosieConversation
+# 14 "data/maps/CelesticTown_Ruins/scripts.pory"
+	closemessage
+# 15 "data/maps/CelesticTown_Ruins/scripts.pory"
+	applymovement 1, RosieMovementOut
 # 16 "data/maps/CelesticTown_Ruins/scripts.pory"
-	removeobject 1
+	waitmovement 0
 # 17 "data/maps/CelesticTown_Ruins/scripts.pory"
-	setflag FLAG_CELESTIC_RUINS_INTRO
+	removeobject 1
 # 18 "data/maps/CelesticTown_Ruins/scripts.pory"
 	setvar VAR_CELESTIC_RUINS_STATE, 1
 # 19 "data/maps/CelesticTown_Ruins/scripts.pory"
