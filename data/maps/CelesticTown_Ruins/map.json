@@ -43,7 +43,7 @@
       "x": 9,
       "y": 2,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_CELESTIC_RUINS_STATE",
       "var_value": "0",
       "script": "CelesticTown_Ruins_TriggerScript_Intro"
     }

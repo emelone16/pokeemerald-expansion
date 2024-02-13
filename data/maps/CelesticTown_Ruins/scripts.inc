@@ -14,36 +14,32 @@ CelesticTown_Ruins_TriggerScript_Intro::
 # 10 "data/maps/CelesticTown_Ruins/scripts.pory"
 	waitmovement 0
 # 11 "data/maps/CelesticTown_Ruins/scripts.pory"
-	msgbox CynthiaRosieConversation
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 12 "data/maps/CelesticTown_Ruins/scripts.pory"
-	closemessage
+	msgbox CynthiaRosieConversation
 # 13 "data/maps/CelesticTown_Ruins/scripts.pory"
-	applymovement 1, RosieMovementOut
+	closemessage
 # 14 "data/maps/CelesticTown_Ruins/scripts.pory"
-	waitmovement 0
+	applymovement 1, RosieMovementOut
 # 15 "data/maps/CelesticTown_Ruins/scripts.pory"
-	removeobject 1
+	waitmovement 0
 # 16 "data/maps/CelesticTown_Ruins/scripts.pory"
-	setflag FLAG_CELESTIC_RUINS_INTRO
+	removeobject 1
 # 17 "data/maps/CelesticTown_Ruins/scripts.pory"
+	setflag FLAG_CELESTIC_RUINS_INTRO
+# 18 "data/maps/CelesticTown_Ruins/scripts.pory"
+	setvar VAR_CELESTIC_RUINS_STATE, 1
+# 19 "data/maps/CelesticTown_Ruins/scripts.pory"
 	releaseall
 	return
 
 
-# 24 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 26 "data/maps/CelesticTown_Ruins/scripts.pory"
 RosieMovementIn:
-# 25 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 27 "data/maps/CelesticTown_Ruins/scripts.pory"
 	walk_up
-# 25 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 27 "data/maps/CelesticTown_Ruins/scripts.pory"
 	walk_up
-# 25 "data/maps/CelesticTown_Ruins/scripts.pory"
-	walk_up
-# 25 "data/maps/CelesticTown_Ruins/scripts.pory"
-	walk_up
-# 26 "data/maps/CelesticTown_Ruins/scripts.pory"
-	walk_right
-# 26 "data/maps/CelesticTown_Ruins/scripts.pory"
-	walk_right
 # 27 "data/maps/CelesticTown_Ruins/scripts.pory"
 	walk_up
 # 27 "data/maps/CelesticTown_Ruins/scripts.pory"
@@ -52,38 +48,46 @@ RosieMovementIn:
 	walk_right
 # 28 "data/maps/CelesticTown_Ruins/scripts.pory"
 	walk_right
-# 28 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 29 "data/maps/CelesticTown_Ruins/scripts.pory"
+	walk_up
+# 29 "data/maps/CelesticTown_Ruins/scripts.pory"
+	walk_up
+# 30 "data/maps/CelesticTown_Ruins/scripts.pory"
+	walk_right
+# 30 "data/maps/CelesticTown_Ruins/scripts.pory"
+	walk_right
+# 30 "data/maps/CelesticTown_Ruins/scripts.pory"
 	walk_right
 	step_end
 
-# 35 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 37 "data/maps/CelesticTown_Ruins/scripts.pory"
 RosieMovementOut:
-# 36 "data/maps/CelesticTown_Ruins/scripts.pory"
-	walk_down
-# 37 "data/maps/CelesticTown_Ruins/scripts.pory"
-	walk_right
-# 37 "data/maps/CelesticTown_Ruins/scripts.pory"
-	walk_right
-# 37 "data/maps/CelesticTown_Ruins/scripts.pory"
-	walk_right
-# 37 "data/maps/CelesticTown_Ruins/scripts.pory"
-	walk_right
-# 37 "data/maps/CelesticTown_Ruins/scripts.pory"
-	walk_right
 # 38 "data/maps/CelesticTown_Ruins/scripts.pory"
 	walk_down
-# 38 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 39 "data/maps/CelesticTown_Ruins/scripts.pory"
+	walk_right
+# 39 "data/maps/CelesticTown_Ruins/scripts.pory"
+	walk_right
+# 39 "data/maps/CelesticTown_Ruins/scripts.pory"
+	walk_right
+# 39 "data/maps/CelesticTown_Ruins/scripts.pory"
+	walk_right
+# 39 "data/maps/CelesticTown_Ruins/scripts.pory"
+	walk_right
+# 40 "data/maps/CelesticTown_Ruins/scripts.pory"
 	walk_down
-# 38 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 40 "data/maps/CelesticTown_Ruins/scripts.pory"
 	walk_down
-# 38 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 40 "data/maps/CelesticTown_Ruins/scripts.pory"
 	walk_down
-# 38 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 40 "data/maps/CelesticTown_Ruins/scripts.pory"
+	walk_down
+# 40 "data/maps/CelesticTown_Ruins/scripts.pory"
 	walk_down
 	step_end
 
 CynthiaObservesRuins::
-# 20 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 22 "data/maps/CelesticTown_Ruins/scripts.pory"
 	.string "Cynthia observes the painting...\p"
 	.string "...\p"
 	.string "There are three spirit-like looking\n"
@@ -94,7 +98,7 @@ CynthiaObservesRuins::
 	.string "...$"
 
 CynthiaRosieConversation::
-# 31 "data/maps/CelesticTown_Ruins/scripts.pory"
+# 33 "data/maps/CelesticTown_Ruins/scripts.pory"
 	.string "Rosie: Studying this painting again,\n"
 	.string "huh Cynthia?\p"
 	.string "You're obsessed with these 3 spirit\n"

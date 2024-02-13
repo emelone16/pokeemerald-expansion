@@ -8,12 +8,14 @@ script CelesticTown_Ruins_TriggerScript_Intro {
   closemessage
   applymovement(1, RosieMovementIn)
   waitmovement(0)
+  applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
   msgbox(CynthiaRosieConversation)
   closemessage
   applymovement(1, RosieMovementOut)
   waitmovement(0)
   removeobject(1)
   setflag(FLAG_CELESTIC_RUINS_INTRO)
+  setvar(VAR_CELESTIC_RUINS_STATE, 1)
   releaseall
 }
 
