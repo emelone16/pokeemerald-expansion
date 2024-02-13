@@ -4,6 +4,36 @@ mapscripts CelesticTown_Ruins_MapScripts {
 
 script CelesticTown_Ruins_TriggerScript_Intro {
   lockall
-  msgbox("Cynthia gazes at ruins")
+  msgbox(CynthiaObservesRuins)
+  closemessage
+  applymovement(1, RosieMovementIn)
+  waitmovement(0)
+  msgbox(CynthiaRosieConversation)
+  closemessage
+  applymovement(1, RosieMovementOut)
+  waitmovement(0)
+  removeobject(1)
+  setflag(FLAG_CELESTIC_RUINS_INTRO)
   releaseall
+}
+
+text CynthiaObservesRuins {
+  format("Cynthia observes the painting...\p...\pThere are three spirit-like looking creatures. Are they Pokémon?\pWhat is their purpose?\pHow are they related?\pWhat is that red sphere in the middle?\p...")
+}
+
+movement RosieMovementIn {
+  walk_up * 4
+  walk_right * 2
+  walk_up * 2
+  walk_right * 3
+}
+
+text CynthiaRosieConversation {
+  format("Rosie: Studying this painting again, huh Cynthia?\pYou're obsessed with these 3 spirit creatures.\pI do wonder what their purpose is myself. Maybe one of them can time travel! That would be cool...\pAnyways, today is the day I take you out to catch your very first Pokémon, remember?\pWe're going to go to Mt Coronet to find a really rare Pokémon for you!\pI'll be waiting at the west exit of town, near Route 211. See you there, don't get consumed by this painting again!")
+}
+
+movement RosieMovementOut {
+  walk_down
+  walk_right * 5
+  walk_down * 5
 }
