@@ -7,3 +7,105 @@ script CelesticTown_EventScript_TownSign {
   msgbox("Celestic Town")
   releaseall
 }
+
+script CelesticTown_WestExit_Trigger {
+  lockall
+  addobject(1)
+  applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+  applymovement(2, Common_Movement_WalkInPlaceFasterUp)
+  msgbox(CelesticTown_Intro_WestExit_1)
+  closemessage
+  applymovement(1, Grandma_Movement_In)
+  waitmovement(0)
+
+  applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+  applymovement(2, Common_Movement_WalkInPlaceFasterRight)
+
+  msgbox(CelesticTown_Intro_WestExit_2)
+  giveitem(ITEM_POTION, 5)
+  giveitem(ITEM_REPEL, 5)
+  giveitem(ITEM_PARALYZE_HEAL, 2)
+  giveitem(ITEM_POKE_BALL, 10)
+
+  msgbox(CelesticTown_Intro_WestExit_3)
+
+  playfanfare(MUS_OBTAIN_ITEM)
+  msgbox(CelesticTown_Intro_Cynthia_Received_Pokedex)
+  waitfanfare
+  setflag(FLAG_SYS_POKEDEX_GET)
+  special(SetUnlockedPokedexFlags)
+  setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+  setvar(VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
+
+  msgbox(CelesticTown_Intro_WestExit_4)
+  closemessage
+
+  applymovement(1, Grandma_Movement_Out)
+  waitmovement(0)
+  removeobject(1)
+
+  applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+  applymovement(2, Common_Movement_WalkInPlaceFasterUp)
+
+  msgbox(CelesticTown_Intro_WestExit_5)
+  closemessage
+  
+  applymovement(2, CelesticTown_Intro_WestExit_Rosie_Out)
+  waitmovement(0)
+
+  releaseall
+}
+
+text CelesticTown_Intro_WestExit_1 {
+  format("Rosie: Alright Cynthia! You ready to get going off to Mt. Coronet?\p
+  ???: Hold up, you two.")
+}
+
+text CelesticTown_Intro_WestExit_2 {
+  format("Grandma: I know you two are very anxious to get out to Mt. Coronet to catch Cynthia her first Pokémon.\p
+  Do you two have enough supplies?\p
+  Rosie: We have Pokéballs!\p
+  Grandma: Oh dear, you two aren't going to last very long out there are you...\p
+  You'll need more than just Pokéballs. Here, take this.")
+}
+
+text CelesticTown_Intro_WestExit_3 {
+  format("Grandma: There you go. I even gave some extra Pokéballs.\p
+  Rosie: Thank you Cynthia's Grandma! Let's get going Cynthia!\p
+  Grandma: One more thing girls, I know you're both very excited.\p
+  I have one more thing to give to Cynthia.")
+}
+
+text CelesticTown_Intro_WestExit_4 {
+  format("Grandma: Rosie, you already have one of these so you should know how it works.\p
+  But for Cynthia, this is a Pokédex. Use it to catalog all of the different Pokémon you meet.\p
+  Cynthia, this is the beginning of your journey. You're going to learn and grow so much, I know it. Please just be very careful out there, and make sure to get back home before dark.\p
+  Rosie: Oh don't you worry Grandma! We will be back in no time!")
+}
+
+text CelesticTown_Intro_WestExit_5 {
+  format("
+  That was very nice of your Grandma to give us those supplies!\p
+  Are you ready to catch you very first Pokémon Cynthia?\p
+  TODO include choice\p
+  Let's go!
+  ")
+}
+
+text CelesticTown_Intro_Cynthia_Received_Pokedex {
+  format("Cynthia received a Pokédex from Grandma!")
+}
+
+movement Grandma_Movement_In {
+  walk_down * 7
+  walk_left
+}
+
+movement Grandma_Movement_Out {
+  walk_right
+  walk_up * 7
+}
+
+movement CelesticTown_Intro_WestExit_Rosie_Out {
+  walk_left * 8
+}
