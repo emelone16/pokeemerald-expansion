@@ -52,6 +52,7 @@ script CelesticTown_WestExit_Trigger {
   
   applymovement(2, CelesticTown_Intro_WestExit_Rosie_Out)
   waitmovement(0)
+  removeobject(2)
 
   releaseall
 }

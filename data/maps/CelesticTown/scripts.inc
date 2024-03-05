@@ -81,68 +81,70 @@ CelesticTown_WestExit_Trigger::
 	applymovement 2, CelesticTown_Intro_WestExit_Rosie_Out
 # 54 "data/maps/CelesticTown/scripts.pory"
 	waitmovement 0
-# 56 "data/maps/CelesticTown/scripts.pory"
+# 55 "data/maps/CelesticTown/scripts.pory"
+	removeobject 2
+# 57 "data/maps/CelesticTown/scripts.pory"
 	releaseall
 	return
 
 
-# 99 "data/maps/CelesticTown/scripts.pory"
+# 100 "data/maps/CelesticTown/scripts.pory"
 Grandma_Movement_In:
-# 100 "data/maps/CelesticTown/scripts.pory"
-	walk_down
-# 100 "data/maps/CelesticTown/scripts.pory"
-	walk_down
-# 100 "data/maps/CelesticTown/scripts.pory"
-	walk_down
-# 100 "data/maps/CelesticTown/scripts.pory"
-	walk_down
-# 100 "data/maps/CelesticTown/scripts.pory"
-	walk_down
-# 100 "data/maps/CelesticTown/scripts.pory"
-	walk_down
-# 100 "data/maps/CelesticTown/scripts.pory"
+# 101 "data/maps/CelesticTown/scripts.pory"
 	walk_down
 # 101 "data/maps/CelesticTown/scripts.pory"
+	walk_down
+# 101 "data/maps/CelesticTown/scripts.pory"
+	walk_down
+# 101 "data/maps/CelesticTown/scripts.pory"
+	walk_down
+# 101 "data/maps/CelesticTown/scripts.pory"
+	walk_down
+# 101 "data/maps/CelesticTown/scripts.pory"
+	walk_down
+# 101 "data/maps/CelesticTown/scripts.pory"
+	walk_down
+# 102 "data/maps/CelesticTown/scripts.pory"
 	walk_left
 	step_end
 
-# 104 "data/maps/CelesticTown/scripts.pory"
-Grandma_Movement_Out:
 # 105 "data/maps/CelesticTown/scripts.pory"
+Grandma_Movement_Out:
+# 106 "data/maps/CelesticTown/scripts.pory"
 	walk_right
-# 106 "data/maps/CelesticTown/scripts.pory"
+# 107 "data/maps/CelesticTown/scripts.pory"
 	walk_up
-# 106 "data/maps/CelesticTown/scripts.pory"
+# 107 "data/maps/CelesticTown/scripts.pory"
 	walk_up
-# 106 "data/maps/CelesticTown/scripts.pory"
+# 107 "data/maps/CelesticTown/scripts.pory"
 	walk_up
-# 106 "data/maps/CelesticTown/scripts.pory"
+# 107 "data/maps/CelesticTown/scripts.pory"
 	walk_up
-# 106 "data/maps/CelesticTown/scripts.pory"
+# 107 "data/maps/CelesticTown/scripts.pory"
 	walk_up
-# 106 "data/maps/CelesticTown/scripts.pory"
+# 107 "data/maps/CelesticTown/scripts.pory"
 	walk_up
-# 106 "data/maps/CelesticTown/scripts.pory"
+# 107 "data/maps/CelesticTown/scripts.pory"
 	walk_up
 	step_end
 
-# 109 "data/maps/CelesticTown/scripts.pory"
+# 110 "data/maps/CelesticTown/scripts.pory"
 CelesticTown_Intro_WestExit_Rosie_Out:
-# 110 "data/maps/CelesticTown/scripts.pory"
+# 111 "data/maps/CelesticTown/scripts.pory"
 	walk_left
-# 110 "data/maps/CelesticTown/scripts.pory"
+# 111 "data/maps/CelesticTown/scripts.pory"
 	walk_left
-# 110 "data/maps/CelesticTown/scripts.pory"
+# 111 "data/maps/CelesticTown/scripts.pory"
 	walk_left
-# 110 "data/maps/CelesticTown/scripts.pory"
+# 111 "data/maps/CelesticTown/scripts.pory"
 	walk_left
-# 110 "data/maps/CelesticTown/scripts.pory"
+# 111 "data/maps/CelesticTown/scripts.pory"
 	walk_left
-# 110 "data/maps/CelesticTown/scripts.pory"
+# 111 "data/maps/CelesticTown/scripts.pory"
 	walk_left
-# 110 "data/maps/CelesticTown/scripts.pory"
+# 111 "data/maps/CelesticTown/scripts.pory"
 	walk_left
-# 110 "data/maps/CelesticTown/scripts.pory"
+# 111 "data/maps/CelesticTown/scripts.pory"
 	walk_left
 	step_end
 
@@ -151,13 +153,13 @@ CelesticTown_EventScript_TownSign_Text_0:
 	.string "Celestic Town$"
 
 CelesticTown_Intro_WestExit_1::
-# 59 "data/maps/CelesticTown/scripts.pory"
+# 60 "data/maps/CelesticTown/scripts.pory"
 	.string "Rosie: Alright Cynthia! You ready to\n"
 	.string "get going off to Mt. Coronet?\p"
 	.string "???: Hold up, you two.$"
 
 CelesticTown_Intro_WestExit_2::
-# 64 "data/maps/CelesticTown/scripts.pory"
+# 65 "data/maps/CelesticTown/scripts.pory"
 	.string "Grandma: I know you two are very\n"
 	.string "anxious to get out to Mt. Coronet to\l"
 	.string "catch Cynthia her first Pokémon.\p"
@@ -169,7 +171,7 @@ CelesticTown_Intro_WestExit_2::
 	.string "Here, take this.$"
 
 CelesticTown_Intro_WestExit_3::
-# 72 "data/maps/CelesticTown/scripts.pory"
+# 73 "data/maps/CelesticTown/scripts.pory"
 	.string "Grandma: There you go. I even gave some\n"
 	.string "extra Pokéballs.\p"
 	.string "Rosie: Thank you Cynthia's Grandma!\n"
@@ -180,7 +182,7 @@ CelesticTown_Intro_WestExit_3::
 	.string "Cynthia.$"
 
 CelesticTown_Intro_WestExit_4::
-# 79 "data/maps/CelesticTown/scripts.pory"
+# 80 "data/maps/CelesticTown/scripts.pory"
 	.string "Grandma: Rosie, you already have one of\n"
 	.string "these so you should know how it works.\p"
 	.string "But for Cynthia, this is a Pokédex. Use\n"
@@ -195,7 +197,7 @@ CelesticTown_Intro_WestExit_4::
 	.string "will be back in no time!$"
 
 CelesticTown_Intro_WestExit_5::
-# 86 "data/maps/CelesticTown/scripts.pory"
+# 87 "data/maps/CelesticTown/scripts.pory"
 	.string "That was very nice of your Grandma to\n"
 	.string "give us those supplies!\p"
 	.string "Are you ready to catch you very first\n"
@@ -204,6 +206,6 @@ CelesticTown_Intro_WestExit_5::
 	.string "Let's go!$"
 
 CelesticTown_Intro_Cynthia_Received_Pokedex::
-# 95 "data/maps/CelesticTown/scripts.pory"
+# 96 "data/maps/CelesticTown/scripts.pory"
 	.string "Cynthia received a Pokédex from\n"
 	.string "Grandma!$"

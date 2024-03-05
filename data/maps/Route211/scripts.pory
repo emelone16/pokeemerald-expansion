@@ -1,0 +1,36 @@
+mapscripts Route211_MapScripts {
+    
+}
+
+script Route211_ProtectGrass_Trigger_1 {
+    lockall
+    applymovement(1, Common_Movement_WalkInPlaceFasterUp)
+    msgbox(Route211_ProtectGrass_Text)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route211_ProtectGrass_Movement_1)
+    waitmovement(0)
+    releaseall
+}
+
+script Route211_ProtectGrass_Trigger_2 {
+    lockall
+    applymovement(1, Common_Movement_WalkInPlaceFasterRight)
+    msgbox(Route211_ProtectGrass_Text)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route211_ProtectGrass_Movement_2)
+    waitmovement(0)
+    releaseall
+}
+
+text Route211_ProtectGrass_Text {
+    format("
+    Rosie: Cynthia! You don't have a Pokémon yet so you can't enter the grass.\p
+    Best to take the path through the mountain. 
+    ")
+}
+
+movement Route211_ProtectGrass_Movement_1 {
+  walk_up
+}
+
+movement Route211_ProtectGrass_Movement_2 {
+  walk_right
+}

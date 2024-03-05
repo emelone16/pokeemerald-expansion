@@ -25,7 +25,7 @@
       "x": 60,
       "y": 21,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -51,7 +51,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route211_ProtectGrass_Trigger_1"
     },
     {
       "type": "trigger",
@@ -60,7 +60,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route211_ProtectGrass_Trigger_1"
     },
     {
       "type": "trigger",
@@ -69,7 +69,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route211_ProtectGrass_Trigger_2"
     },
     {
       "type": "trigger",
@@ -78,7 +78,34 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route211_ProtectGrass_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 42,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_MIXED_RECORDS",
+      "var_value": "0",
+      "script": "Route211_ProtectGrass_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_MIXED_RECORDS",
+      "var_value": "0",
+      "script": "Route211_ProtectGrass_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 44,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_TEMP_MIXED_RECORDS",
+      "var_value": "0",
+      "script": "Route211_ProtectGrass_Trigger_1"
     }
   ],
   "bg_events": [
