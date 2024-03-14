@@ -1,0 +1,92 @@
+mapscripts MtCoronet_5F_StarterCave_MapScripts {
+    
+}
+
+script MtCoronet_5F_StarterCave_Gible_Trigger {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER, MtCoronet_5F_StarterCave_Cynthia_Enter)
+    waitmovement(0)
+    
+    msgbox(MyCoronet_5F_StarterCave_Gible_Text_1)
+    closemessage
+
+    applymovement(2, MtCoronet_5F_StarterCave_Gible_Move)
+    waitmovement(0)
+
+    msgbox(MyCoronet_5F_StarterCave_Gible_Text_2)
+    closemessage
+
+    applymovement(2, MtCoronet_5F_StarterCave_GibleStartled)
+    applymovement(OBJ_EVENT_ID_PLAYER, MtCoronet_5F_StarterCave_Cynthia_ApproachGible)
+    waitmovement(0)
+
+    msgbox(MyCoronet_5F_StarterCave_Gible_Text_3)
+    closemessage
+
+    delay(30)
+
+    removeobject(2)
+    msgbox(MyCoronet_5F_StarterCave_Gible_Text_4)
+    closemessage
+
+    givemon(SPECIES_GIBLE, 5, ITEM_POKE_BALL)
+
+    msgbox(MyCoronet_5F_StarterCave_Gible_Text_5)
+    closemessage
+
+    releaseall
+}
+
+text MyCoronet_5F_StarterCave_Gible_Text_1 {
+    format("
+    Rosie: Look Cynthia! It's a Pokémon!
+    ")
+}
+
+text MyCoronet_5F_StarterCave_Gible_Text_2 {
+    format("
+    Cynthia: Wow, it looks pretty cool. Almost like a mini dragon.\p
+    I want to try and catch it!\p
+    Rosie: Try throwing a Pokéball! Maybe you can catch it by surprise.
+    ")
+}
+
+text MyCoronet_5F_StarterCave_Gible_Text_3 {
+    format("
+    Cynthia throws a Pokéball at the wild Gible!
+    ")
+}
+
+text MyCoronet_5F_StarterCave_Gible_Text_4 {
+    format("
+    It was caught!
+    ")
+}
+
+text MyCoronet_5F_StarterCave_Gible_Text_5 {
+    format("
+    Rosie: Wow Cynthia! What a cool starter Pokémon. You'll have to show this off to your Grandma.\p
+    I'm gonna head out to the main cave area and train a bit. I'll see you out there!\p
+    ")
+}
+
+movement MtCoronet_5F_StarterCave_Cynthia_Enter {
+    walk_down * 2
+}
+
+movement MtCoronet_5F_StarterCave_Gible_Move {
+    walk_right
+    delay_16
+    walk_left
+    delay_16
+    walk_down
+}
+
+movement MtCoronet_5F_StarterCave_Cynthia_ApproachGible {
+    walk_down
+}
+
+movement MtCoronet_5F_StarterCave_GibleStartled {
+    face_up
+}

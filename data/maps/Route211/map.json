@@ -31,7 +31,20 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_CELESTIC_RUINS_INTRO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_4",
+      "x": 44,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_CELESTIC_RUINS_INTRO"
     }
   ],
   "warp_events": [
@@ -82,30 +95,21 @@
     },
     {
       "type": "trigger",
-      "x": 42,
-      "y": 16,
-      "elevation": 0,
-      "var": "VAR_TEMP_MIXED_RECORDS",
-      "var_value": "0",
-      "script": "Route211_ProtectGrass_Trigger_1"
-    },
-    {
-      "type": "trigger",
       "x": 43,
-      "y": 16,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "Route211_ProtectGrass_Trigger_1"
+      "script": "Route211_NearCave_Trigger"
     },
     {
       "type": "trigger",
-      "x": 44,
-      "y": 16,
+      "x": 52,
+      "y": 14,
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "Route211_ProtectGrass_Trigger_1"
+      "script": "Route211_Earthquake_Trigger"
     }
   ],
   "bg_events": [

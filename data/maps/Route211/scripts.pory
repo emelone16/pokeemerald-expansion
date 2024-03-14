@@ -20,10 +20,70 @@ script Route211_ProtectGrass_Trigger_2 {
     releaseall
 }
 
+script Route211_Earthquake_Trigger {
+    lockall
+
+    setvar(VAR_0x8004, 2)  # vertical pan
+	setvar(VAR_0x8005, 5)  # horizontal pan
+	setvar(VAR_0x8006, 14)  # num shakes
+	setvar(VAR_0x8007, 3)  # shake delay
+	special(ShakeCamera)
+	waitstate
+
+    msgbox(Route211_Earthquake_Text)
+    releaseall
+}
+
+script Route211_NearCave_Trigger {
+    lockall
+    addobject(2)
+    applymovement(2, Route211_NearCave_Rosie_Enter)
+    waitmovement(0)
+    
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+    msgbox(Route211_NearCave_Text_1)
+    closemessage
+
+    applymovement(2, Route211_NearCave_Rosie_WalkInFront)
+    waitmovement(0)
+
+    applymovement(2, Route211_NearCave_Rosie_WalkToCave)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route211_NearCave_Cynthia_WalkToCave)
+    waitmovement(0)
+
+    msgbox(Route211_NearCave_Text_2)
+    releaseall
+}
+
 text Route211_ProtectGrass_Text {
     format("
     Rosie: Cynthia! You don't have a Pokémon yet so you can't enter the grass.\p
     Best to take the path through the mountain. 
+    ")
+}
+
+text Route211_Earthquake_Text {
+    format("
+    Cynthia: What was that???\p
+    I've lived in Celestic Town all my life and have never felt something like that before...\p
+    I hope the entrance to Mt. Coronet isn't blocked off.
+    ")
+}
+
+text Route211_NearCave_Text_1 {
+    format("
+    Rosie: Wow! Did you feel that earthquake just now?\p
+    Cynthia: I did... I've never felt anything like that before.\p
+    Do you think it's ok to keep going onto Mt. Coronet?\p
+    Rosie: Oh we sure are not turning back!\p
+    Nothing like a risk on this little adventure! Let's get to the cave entrance.
+    ")
+}
+
+text Route211_NearCave_Text_2 {
+    format("
+    Rosie: You can go in first Cynthia! I'll be right behind.\p
+    Cynthia: Let's do it!
     ")
 }
 
@@ -33,4 +93,25 @@ movement Route211_ProtectGrass_Movement_1 {
 
 movement Route211_ProtectGrass_Movement_2 {
   walk_right
+}
+
+movement Route211_NearCave_Rosie_Enter {
+    walk_down * 4
+    walk_left
+    walk_down * 3
+}
+
+movement Route211_NearCave_Rosie_WalkInFront {
+    walk_left
+    walk_down
+}
+
+movement Route211_NearCave_Rosie_WalkToCave {
+    walk_left * 2
+    walk_down
+    face_left
+}
+
+movement Route211_NearCave_Cynthia_WalkToCave {
+    walk_left * 3
 }

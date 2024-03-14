@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 17,
+      "x": 12,
       "y": 30,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 16,
+      "x": 11,
       "y": 31,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 24,
+      "x": 19,
       "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -55,7 +55,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 26,
+      "x": 21,
       "y": 34,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -65,25 +65,38 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_4",
+      "x": 36,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_CELESTIC_RUINS_INTRO"
     }
   ],
   "warp_events": [
     {
-      "x": 38,
+      "x": 36,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_ROUTE211",
       "dest_warp_id": "0"
     },
     {
-      "x": 8,
+      "x": 3,
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_MT_CORONET_5F",
       "dest_warp_id": "0"
     },
     {
-      "x": 31,
+      "x": 26,
       "y": 26,
       "elevation": 0,
       "dest_map": "MAP_MT_CORONET_5F_STARTER_CAVE",
@@ -91,7 +104,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_TEMP_MIXED_RECORDS",
+      "var_value": "0",
+      "script": "MtCoronet_5F_Rosie_Entrance_Trigger"
+    }
   ],
   "bg_events": [
 

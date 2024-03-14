@@ -1,0 +1,52 @@
+mapscripts MtCoronet_5F_MapScripts {
+    
+}
+
+script MtCoronet_5F_Rosie_Entrance_Trigger {
+    lockall
+    addobject(5)
+    delay(40)
+    applymovement(5, MtCoronet_5F_Rosie_Enter)
+    waitmovement(0)
+    
+    msgbox(MyCoronet_5F_Rosie_Enter_Text_1)
+    closemessage
+
+    applymovement(5, MtCoronet_5F_Rosie_WalkInFront)
+    waitmovement(0)
+
+    applymovement(5, MtCoronet_5F_Rosie_WalkToStarterCave)
+    applymovement(OBJ_EVENT_ID_PLAYER, MtCoronet_5F_Cynthia_WalkToStarterCave)
+    waitmovement(0)
+    removeobject(5)
+    warp(MAP_MT_CORONET_5F_STARTER_CAVE, 0)
+    releaseall
+}
+
+text MyCoronet_5F_Rosie_Enter_Text_1 {
+    format("
+    Rosie: Alright Cynthia. Pokémon can approach us at anytime now. Stick with me.\p
+    I want to take you into this deeper cave straight ahead. I've seen some pretty rare Pokémon in there.\p
+    Follow me!
+    ")
+}
+
+movement MtCoronet_5F_Rosie_Enter {
+    walk_up
+    walk_left * 4
+}
+
+movement MtCoronet_5F_Rosie_WalkInFront {
+    walk_left
+    walk_down
+}
+
+movement MtCoronet_5F_Rosie_WalkToStarterCave {
+    walk_left * 5
+    walk_up
+}
+
+movement MtCoronet_5F_Cynthia_WalkToStarterCave {
+    walk_left * 6
+    walk_up
+}
