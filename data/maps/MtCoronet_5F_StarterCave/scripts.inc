@@ -40,56 +40,58 @@ MtCoronet_5F_StarterCave_Gible_Trigger::
 # 31 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	closemessage
 # 33 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 34 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	givemon SPECIES_GIBLE, 5, ITEM_POKE_BALL
-# 35 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
-	msgbox MyCoronet_5F_StarterCave_Gible_Text_5
 # 36 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+	msgbox MyCoronet_5F_StarterCave_Gible_Text_5
+# 37 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	closemessage
-# 38 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+# 39 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	releaseall
 	return
 
 
-# 74 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+# 75 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 MtCoronet_5F_StarterCave_Cynthia_Enter:
-# 75 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+# 76 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	walk_down
-# 75 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+# 76 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	walk_down
 	step_end
 
-# 78 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
-MtCoronet_5F_StarterCave_Gible_Move:
 # 79 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
-	walk_right
+MtCoronet_5F_StarterCave_Gible_Move:
 # 80 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
-	delay_16
+	walk_right
 # 81 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
-	walk_left
-# 82 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	delay_16
+# 82 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+	walk_left
 # 83 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+	delay_16
+# 84 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	walk_down
 	step_end
 
-# 86 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
-MtCoronet_5F_StarterCave_Cynthia_ApproachGible:
 # 87 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+MtCoronet_5F_StarterCave_Cynthia_ApproachGible:
+# 88 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	walk_down
 	step_end
 
-# 90 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
-MtCoronet_5F_StarterCave_GibleStartled:
 # 91 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+MtCoronet_5F_StarterCave_GibleStartled:
+# 92 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	face_up
 	step_end
 
 MyCoronet_5F_StarterCave_Gible_Text_1::
-# 41 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+# 42 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	.string "Rosie: Look Cynthia! It's a Pokémon!$"
 
 MyCoronet_5F_StarterCave_Gible_Text_2::
-# 47 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+# 48 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	.string "Cynthia: Wow, it looks pretty cool.\n"
 	.string "Almost like a mini dragon.\p"
 	.string "I want to try and catch it!\p"
@@ -97,16 +99,16 @@ MyCoronet_5F_StarterCave_Gible_Text_2::
 	.string "you can catch it by surprise.$"
 
 MyCoronet_5F_StarterCave_Gible_Text_3::
-# 55 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+# 56 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	.string "Cynthia throws a Pokéball at the wild\n"
 	.string "Gible!$"
 
 MyCoronet_5F_StarterCave_Gible_Text_4::
-# 61 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+# 62 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	.string "It was caught!$"
 
 MyCoronet_5F_StarterCave_Gible_Text_5::
-# 67 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
+# 68 "data/maps/MtCoronet_5F_StarterCave/scripts.pory"
 	.string "Rosie: Wow Cynthia! What a cool starter\n"
 	.string "Pokémon. You'll have to show this off to\l"
 	.string "your Grandma.\p"

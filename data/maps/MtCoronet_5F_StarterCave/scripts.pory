@@ -30,6 +30,7 @@ script MtCoronet_5F_StarterCave_Gible_Trigger {
     msgbox(MyCoronet_5F_StarterCave_Gible_Text_4)
     closemessage
 
+    setflag(FLAG_SYS_POKEMON_GET)
     givemon(SPECIES_GIBLE, 5, ITEM_POKE_BALL)
 
     msgbox(MyCoronet_5F_StarterCave_Gible_Text_5)
