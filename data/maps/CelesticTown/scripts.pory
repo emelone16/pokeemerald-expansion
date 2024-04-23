@@ -8,11 +8,51 @@ script CelesticTown_EventScript_TownSign {
   releaseall
 }
 
-script CelesticTown_WestExit_Trigger {
+script CelesticTown_EventScript_RuinsSign {
+  lockall
+  msgbox("Celestic Town Ruins")
+  releaseall
+}
+
+script CelesticTown_EventScript_LabSign {
+  lockall
+  msgbox("Celestic Town Lab")
+  releaseall
+}
+
+script CelesticTown_WestExit_Trigger0 {
+  lockall
+  addobject(1)
+  applymovement(OBJ_EVENT_ID_PLAYER, Player_Walk_Down)
+  applymovement(2, Common_Movement_WalkInPlaceFasterUp)
+  goto(CelesticTown_WestExit_Trigger)
+}
+
+script CelesticTown_WestExit_Trigger1 {
   lockall
   addobject(1)
   applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
   applymovement(2, Common_Movement_WalkInPlaceFasterUp)
+  goto(CelesticTown_WestExit_Trigger)
+}
+
+script CelesticTown_WestExit_Trigger2 {
+  lockall
+  addobject(1)
+  applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+  applymovement(2, Common_Movement_WalkInPlaceFasterDown)
+  goto(CelesticTown_WestExit_Trigger)
+}
+
+script CelesticTown_WestExit_Trigger3 {
+  lockall
+  addobject(1)
+  applymovement(OBJ_EVENT_ID_PLAYER, Player_Walk_Up)
+  applymovement(2, Common_Movement_WalkInPlaceFasterDown)
+  goto(CelesticTown_WestExit_Trigger)
+}
+
+script CelesticTown_WestExit_Trigger {
   msgbox(CelesticTown_Intro_WestExit_1)
   closemessage
   applymovement(1, Grandma_Movement_In)
@@ -107,6 +147,14 @@ movement Grandma_Movement_Out {
   walk_up * 7
 }
 
+movement Player_Walk_Down {
+  walk_down
+}
+
+movement Player_Walk_Up {
+  walk_up
+}
+
 movement CelesticTown_Intro_WestExit_Rosie_Out {
   walk_left * 8
 }
@@ -119,6 +167,53 @@ script CelesticTown_NPC_1_Interact {
 }
 
 text CelesticTown_NPC_1_Interact_Text {
-  format("Welcome to Celestic Town!\p
-  Enjoy your stay!")
+  format("Celestic Town is built around this crater.\p
+  We have no idea what created it, scientists have been investigating it for years.")
+}
+
+script CelesticTown_NPC_2_Interact {
+  lock
+  faceplayer
+  msgbox(CelesticTown_NPC_2_Interact_Text)
+  release
+}
+
+text CelesticTown_NPC_2_Interact_Text {
+  format("I love this hiding spot!")
+}
+
+script CelesticTown_NPC_3_Interact {
+  lock
+  faceplayer
+  msgbox(CelesticTown_NPC_3_Interact_Text)
+  release
+}
+
+text CelesticTown_NPC_3_Interact_Text {
+  format("Celestic Town has such a peaceful aura to it.\p
+  I love living here!")
+}
+
+script CelesticTown_NPC_4_Interact {
+  lock
+  faceplayer
+  msgbox(CelesticTown_NPC_4_Interact_Text)
+  release
+}
+
+text CelesticTown_NPC_4_Interact_Text {
+  format("Sometimes I need to come outside to get some fresh air.\p
+  This is my favorite spot to sit and think.")
+}
+
+script CelesticTown_NPC_5_Interact {
+  lock
+  faceplayer
+  msgbox(CelesticTown_NPC_5_Interact_Text)
+  release
+}
+
+text CelesticTown_NPC_5_Interact_Text {
+  format("Your grandmother is so awesome Cynthia!\p
+  When I grow up I want to be a scientist like her.")
 }

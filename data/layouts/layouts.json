@@ -4460,6 +4460,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/CelesticTown_Ruins/border.bin",
       "blockdata_filepath": "data/layouts/CelesticTown_Ruins/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELESTIC_TOWN_LAB",
+      "name": "CelesticTown_Lab_Layout",
+      "width": 20,
+      "height": 15,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/CelesticTown_Lab/border.bin",
+      "blockdata_filepath": "data/layouts/CelesticTown_Lab/map.bin"
     }
   ]
 }

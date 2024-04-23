@@ -106,7 +106,8 @@
     "LittlerootTown_ProfessorBirchsLab"
   ],
   "gMapGroup_IndoorCelestic": [
-    "CelesticTown_Ruins"
+    "CelesticTown_Ruins",
+    "CelesticTown_Lab"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",

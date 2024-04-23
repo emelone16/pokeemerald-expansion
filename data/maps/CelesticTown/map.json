@@ -48,15 +48,67 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
-      "x": 16,
-      "y": 11,
+      "x": 10,
+      "y": 16,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CelesticTown_NPC_1_Interact",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 20,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CelesticTown_NPC_3_Interact",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 20,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CelesticTown_NPC_1_Interact",
+      "script": "CelesticTown_NPC_4_Interact",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_TWIN",
+      "x": 9,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CelesticTown_NPC_2_Interact",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CelesticTown_NPC_5_Interact",
       "flag": "0"
     }
   ],
@@ -64,6 +116,34 @@
     {
       "x": 14,
       "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_CELESTIC_TOWN_RUINS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_CELESTIC_TOWN_LAB",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_CELESTIC_TOWN_RUINS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_CELESTIC_TOWN_RUINS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 24,
       "elevation": 0,
       "dest_map": "MAP_CELESTIC_TOWN_RUINS",
       "dest_warp_id": "0"
@@ -77,7 +157,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "NULL"
+      "script": "CelesticTown_WestExit_Trigger0"
     },
     {
       "type": "trigger",
@@ -86,7 +166,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "CelesticTown_WestExit_Trigger"
+      "script": "CelesticTown_WestExit_Trigger1"
     },
     {
       "type": "trigger",
@@ -95,7 +175,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "NULL"
+      "script": "CelesticTown_WestExit_Trigger2"
     },
     {
       "type": "trigger",
@@ -104,17 +184,33 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "NULL"
+      "script": "CelesticTown_WestExit_Trigger3"
     }
   ],
   "bg_events": [
     {
       "type": "sign",
-      "x": 10,
-      "y": 15,
+      "x": 22,
+      "y": 23,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "CelesticTown_EventScript_TownSign"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "CelesticTown_EventScript_RuinsSign"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "CelesticTown_EventScript_LabSign"
     }
   ]
 }
