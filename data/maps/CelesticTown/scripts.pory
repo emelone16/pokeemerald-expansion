@@ -110,3 +110,15 @@ movement Grandma_Movement_Out {
 movement CelesticTown_Intro_WestExit_Rosie_Out {
   walk_left * 8
 }
+
+script CelesticTown_NPC_1_Interact {
+  lock
+  faceplayer
+  msgbox(CelesticTown_NPC_1_Interact_Text)
+  release
+}
+
+text CelesticTown_NPC_1_Interact_Text {
+  format("Welcome to Celestic Town!\p
+  Enjoy your stay!")
+}

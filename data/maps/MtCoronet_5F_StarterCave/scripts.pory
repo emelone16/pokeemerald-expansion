@@ -1,6 +1,4 @@
-mapscripts MtCoronet_5F_StarterCave_MapScripts {
-    
-}
+mapscripts MtCoronet_5F_StarterCave_MapScripts {}
 
 script MtCoronet_5F_StarterCave_Gible_Trigger {
     lockall

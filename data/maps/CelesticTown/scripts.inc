@@ -148,6 +148,18 @@ CelesticTown_Intro_WestExit_Rosie_Out:
 	walk_left
 	step_end
 
+CelesticTown_NPC_1_Interact::
+# 115 "data/maps/CelesticTown/scripts.pory"
+	lock
+# 116 "data/maps/CelesticTown/scripts.pory"
+	faceplayer
+# 117 "data/maps/CelesticTown/scripts.pory"
+	msgbox CelesticTown_NPC_1_Interact_Text
+# 118 "data/maps/CelesticTown/scripts.pory"
+	release
+	return
+
+
 CelesticTown_EventScript_TownSign_Text_0:
 # 7 "data/maps/CelesticTown/scripts.pory"
 	.string "Celestic Town$"
@@ -209,3 +221,8 @@ CelesticTown_Intro_Cynthia_Received_Pokedex::
 # 96 "data/maps/CelesticTown/scripts.pory"
 	.string "Cynthia received a Pokédex from\n"
 	.string "Grandma!$"
+
+CelesticTown_NPC_1_Interact_Text::
+# 121 "data/maps/CelesticTown/scripts.pory"
+	.string "Welcome to Celestic Town!\p"
+	.string "Enjoy your stay!$"
