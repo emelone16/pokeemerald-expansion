@@ -4470,6 +4470,36 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/CelesticTown_Lab/border.bin",
       "blockdata_filepath": "data/layouts/CelesticTown_Lab/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELESTIC_TOWN_HOUSE1",
+      "name": "CelesticTown_House1_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CelesticTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/CelesticTown_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELESTIC_TOWN_HOUSE2",
+      "name": "CelesticTown_House2_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CelesticTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/CelesticTown_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_CELESTIC_TOWN_HOUSE3",
+      "name": "CelesticTown_House3_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CelesticTown_House3/border.bin",
+      "blockdata_filepath": "data/layouts/CelesticTown_House3/map.bin"
     }
   ]
 }

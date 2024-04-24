@@ -74,8 +74,11 @@
 #define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB (4 | (1 << 8))
 
 // gMapGroup_IndoorCelestic
-#define MAP_CELESTIC_TOWN_RUINS (0 | (2 << 8))
-#define MAP_CELESTIC_TOWN_LAB   (1 | (2 << 8))
+#define MAP_CELESTIC_TOWN_RUINS  (0 | (2 << 8))
+#define MAP_CELESTIC_TOWN_LAB    (1 | (2 << 8))
+#define MAP_CELESTIC_TOWN_HOUSE1 (2 | (2 << 8))
+#define MAP_CELESTIC_TOWN_HOUSE2 (3 | (2 << 8))
+#define MAP_CELESTIC_TOWN_HOUSE3 (4 | (2 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (3 << 8))

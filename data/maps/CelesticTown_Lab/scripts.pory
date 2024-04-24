@@ -1,0 +1,57 @@
+mapscripts CelesticTown_Lab_MapScripts {
+    
+}
+
+script CelesticTown_Lab_NPC_1_Interact {
+  lock
+  faceplayer
+  msgbox(CelesticTown_Lab_NPC_1_Text)
+  applymovement(1, Common_Movement_WalkInPlaceFasterRight)
+  waitmovement(1)
+  release
+}
+
+text CelesticTown_Lab_NPC_1_Text {
+  format("Have you tried working at your desk while standing up?\p
+  It can improve posture and increase energy levels!")
+}
+
+script CelesticTown_Lab_NPC_2_Interact {
+  lock
+  faceplayer
+  msgbox(CelesticTown_Lab_NPC_2_Text)
+  applymovement(2, Common_Movement_WalkInPlaceFasterRight)
+  waitmovement(2)
+  release
+}
+
+text CelesticTown_Lab_NPC_2_Text {
+  format("Hey Cynthia, your grandmother is busy working in the back room.\p
+  I think she's trying to analyze some of the recent seismic activity from Mt Coronet.")
+}
+
+script CelesticTown_Lab_NPC_3_Interact {
+  lock
+  faceplayer
+  msgbox(CelesticTown_Lab_NPC_3_Text)
+  applymovement(3, Common_Movement_WalkInPlaceFasterUp)
+  waitmovement(3)
+  release
+}
+
+text CelesticTown_Lab_NPC_3_Text {
+  format("Sorry Cynthia, I'm in the middle of something right now.")
+}
+
+script CelesticTown_Lab_NPC_4_Interact {
+  lock
+  faceplayer
+  msgbox(CelesticTown_Lab_NPC_4_Text)
+  applymovement(4, Common_Movement_WalkInPlaceFasterLeft)
+  waitmovement(4)
+  release
+}
+
+text CelesticTown_Lab_NPC_4_Text {
+  format("Ah, nothing beats a good cup of coffee to keep you going!")
+}

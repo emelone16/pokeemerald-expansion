@@ -1071,3 +1071,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CelesticTown_Ruins/scripts.inc"
 
 	.include "data/maps/CelesticTown_Lab/scripts.inc"
+
+	.include "data/maps/CelesticTown_House1/scripts.inc"
+
+	.include "data/maps/CelesticTown_House2/scripts.inc"
+
+	.include "data/maps/CelesticTown_House3/scripts.inc"

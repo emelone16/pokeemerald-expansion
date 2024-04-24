@@ -107,7 +107,10 @@
   ],
   "gMapGroup_IndoorCelestic": [
     "CelesticTown_Ruins",
-    "CelesticTown_Lab"
+    "CelesticTown_Lab",
+    "CelesticTown_House1",
+    "CelesticTown_House2",
+    "CelesticTown_House3"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",
