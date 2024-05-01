@@ -138,14 +138,14 @@
       "x": 24,
       "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_CELESTIC_TOWN_RUINS",
+      "dest_map": "MAP_CELESTIC_TOWN_HOUSE2",
       "dest_warp_id": "0"
     },
     {
       "x": 8,
       "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_CELESTIC_TOWN_RUINS",
+      "dest_map": "MAP_CELESTIC_TOWN_HOUSE3",
       "dest_warp_id": "0"
     }
   ],

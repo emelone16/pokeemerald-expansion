@@ -55,3 +55,51 @@ script CelesticTown_Lab_NPC_4_Interact {
 text CelesticTown_Lab_NPC_4_Text {
   format("Ah, nothing beats a good cup of coffee to keep you going!")
 }
+
+script CelesticTown_Lab_Grandma_Interact {
+    lock
+    faceplayer
+    msgbox(CelesticTown_Lab_Grandma_Text_1)
+
+    giveitem(ITEM_POTION, 5)
+    giveitem(ITEM_REPEL, 5)
+    giveitem(ITEM_PARALYZE_HEAL, 2)
+    giveitem(ITEM_POKE_BALL, 10)
+
+    msgbox(CelesticTown_Lab_Grandma_Text_2)
+
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox(CelesticTown_Lab_Received_Pokedex)
+    waitfanfare
+    setflag(FLAG_SYS_POKEDEX_GET)
+    special(SetUnlockedPokedexFlags)
+    setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+    setvar(VAR_CABLE_CLUB_TUTORIAL_STATE, 1)
+
+    msgbox(CelesticTown_Lab_Grandma_Text_3)
+
+    msgbox(format("TODO GIVE FIELDBOOK"))
+
+    msgbox(CelesticTown_Lab_Grandma_Text_4)
+    release
+}
+
+text CelesticTown_Lab_Grandma_Text_1 {
+  format("Prof Carolina: Hi Cynthia dear. Is today the day?\pCynthia: Indeed it is. Rosie and I are getting ready to head out to Mt. Coronet.\pProf Carolina: Please be careful out there. My last 2 weeks have been swamped in analyzing these tremors we’ve been getting. We still don’t know exactly what’s causing them, but we’re pretty convinced they’re coming from somewhere along Mt. Coronet.\pCynthia: Mt. Coronet is a huge area. We aren’t going super deep into it. Rosie mentioned she found some inner cave with rare Pokemon right near the Route 211 West entrance.\pProf Carolina: Well that sounds very exciting. Before you go. Take these supplies in case you two get into trouble out there.")
+}
+
+text CelesticTown_Lab_Grandma_Text_2 {
+    format("Prof Carolina: Two more things. If you’re going to be catching and battling Pokemon, you might as well have a Pokedex to record information about what you encounter.")
+}
+
+text CelesticTown_Lab_Grandma_Text_3 {
+    format("Prof Carolina: And lastly, take this field book. I know you’re not traveling far today, but now that you are going to be a Pokémon Trainer, I expect you to do some field work for me while you are out in the world!")
+}
+
+text CelesticTown_Lab_Grandma_Text_4 {
+    format("Cynthia: I’ve spent my entire childhood watching you do research about the origins of Sinnoh. Of course I want to contribute to your studies. Though, I don’t know what I will be able to find that you haven’t been able to.\pProf Carolina: There is still so much we do not know about Sinnoh, or the ancient Pokémon that created it. We have our theories, but we still have yet to actually identify any hard evidence. I’m getting too old to do research missions across the region, that’s why I am going to need your help more and more Cynthia.\pCynthia: I’ll do you proud. I’m going to go meet Rosie. We shouldn’t be gone long. Just a quick adventure in and out of Mt. Coronet.\pProf Carolina: Be safe dear.")
+}
+
+text CelesticTown_Lab_Received_Pokedex {
+  format("Cynthia received a Pokédex from Prof Carolina!")
+}
